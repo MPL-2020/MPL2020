@@ -189,17 +189,17 @@ h2 {
 }
 .hpx-head {
 	position: fixed;
-	left: 52%;
+	left: 50%;
 	top: 40%;
-	transform: translate(-52%,-40%);
+	transform: translate(-50%,-50%);
 	font-family: 'Alata', sans-serif;
-	font-size: 40px;
+	font-size: 100px;
 }
 a:before {
   content:"";
   width:15px;
   height:100px;
-  background:#1E2E36;
+  background:white;
   position: absolute;
   -webkit-transform: skewX(-45deg);
   transform: skewX(-45deg);
@@ -208,11 +208,24 @@ a:before {
   left:0px;
   top:-20px;
   animation:_8UqQ8B 2s linear infinite;
-  opacity:0.5;
+  opacity:0.3;
 }
 .poster_download a, .team_download a {
     position: relative;
     overflow:hidden;
+}
+.hpx-loader {
+	/* border: 10px solid #000; */
+	border-radius: 50%;
+	border-top: 10px solid #000;
+	width: 25vw;
+	height: 25vw;
+	-webkit-animation: hpe-spin 2s linear infinite;
+	animation: hpe-spin 700ms linear infinite;
+	position: fixed;
+	left: 37%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }
 @keyframes _8UqQ8B {
  0% {
@@ -242,7 +255,7 @@ a:before {
                     <middle>
                         <div class="poster">
                             <div class="poster_img">
-                                <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg';">
+                                <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg">
                             </div>
                             <div class="poster_download">
                                 <a href="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg" target="_blank">Download</a>
@@ -254,7 +267,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Super%20Kings.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Super%20Kings.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Super%20Kings.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
@@ -264,7 +277,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Blasters.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Blasters.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Blasters.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
@@ -274,7 +287,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Stars.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Stars.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Stars.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
@@ -284,7 +297,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Strikers.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Strikers.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Strikers.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
@@ -294,7 +307,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Thunders.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Thunders.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Thunders.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
@@ -304,7 +317,7 @@ a:before {
                             <div class="team_container">
                                 <div class="team_cont">
                                     <div class="team_img">
-                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Warriors.jpg" onclick="location.href='https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Warriors.jpg';">
+                                        <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Taiwad%20Warriors.jpg">
                                     </div>
                                 </div>
                                 <div class="team_download">
