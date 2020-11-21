@@ -6,6 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fortawesome.github.io/Font-Awesome/3.2.1/assets/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
         <script>
             $(window).bind('load',function(){
                 setTimeout(function(){	
@@ -14,7 +16,7 @@
                     });	
                     $('.main').css('visibility','visible'); 	
                     $('.main').animate({opacity: 1}, 1000);
-                }, 3000);
+                }, 2000);
             });
         </script>
         <style>
@@ -76,12 +78,15 @@ h1 {
   width: 100%;
   text-align: center;
   float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.poster_download a i, .team_download a i {
+	margin-right: 10px;
 }
 .poster_download a, .team_download a {
   display: inline-block;
-  background: #37474f;
+  background: #1e9e74;
   padding: 0 10%;
   line-height: 70px;
   text-decoration: cadetblue;
@@ -102,8 +107,7 @@ body {
   flex-wrap: wrap;
 }
 .team_container {
-  width: 49%;
-  margin-right: 2%;
+  width: 100%;
   margin-bottom: 50px;
 }
 .team_cont, .team_img {
@@ -128,8 +132,6 @@ header {
   background: black;
   color: white;
   margin-bottom: 40px;
-  text-align: left;
-  text-indent: 20px;
 }
 header h1 {
   font-size: 50px;
@@ -163,7 +165,6 @@ h2 {
   float: left;
 }
 .hpx-loader {
-	/*border: 10px solid #000;*/
 	border-radius: 50%;
 	border-top: 10px solid #000;
 	width: 70px;
@@ -195,20 +196,20 @@ h2 {
 	font-family: 'Alata', sans-serif;
 	font-size: 100px;
 }
-a:before {
-  content:"";
-  width:15px;
-  height:100px;
-  background:white;
-  position: absolute;
-  -webkit-transform: skewX(-45deg);
-  transform: skewX(-45deg);
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
-  left:0px;
-  top:-20px;
-  animation:_8UqQ8B 2s linear infinite;
-  opacity:0.3;
+a::before {
+	content: "";
+	width: 40px;
+	height: 100px;
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	-webkit-transform: skewX(-45deg);
+	transform: skewX(-45deg);
+	filter: blur(6px);
+	-webkit-filter: blur(6px);
+	left: 0px;
+	top: -20px;
+	animation: _8UqQ8B 1s linear infinite;
+	opacity: 0.1 !important;
 }
 .poster_download a, .team_download a {
     position: relative;
@@ -246,6 +247,9 @@ body {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23c9d1cb' fill-opacity='0.16'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
 	background-attachment: fixed;
 }
+.teams {
+  display: none;
+}
         </style>
     </head>
     <body>
@@ -263,7 +267,7 @@ body {
                                 <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg">
                             </div>
                             <div class="poster_download">
-                                <a href="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg" target="_blank">Download</a>
+                                <a href="https://raw.githubusercontent.com/MPL-Valsad/2020/main/POSTER%20-%20MPL2020.jpg" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>Download</a>
                             </div>
                         </div>
                         <div class="teams">
