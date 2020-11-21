@@ -1,6 +1,22 @@
 <html>
     <head>
         <title>MPL 2020</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script type="text/javascript" src="https://bulletlink.com/JQuery/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <script>
+            $(window).bind('load',function(){
+                setTimeout(function(){	
+                    $('.hpx-loader, .hpx-head').animate({opacity: 0}, 400, function() {		
+                        $('.hpx-loader, .hpx-head').css('display','none');	
+                    });	
+                    $('.main').css('visibility','visible'); 	
+                    $('.main').animate({opacity: 1}, 1000);
+                }, 3000);
+            });
+        </script>
         <style>
             
 body {
@@ -14,10 +30,8 @@ body {
   width: 100%;
 }
 .wrap {
-  width: 80%;
+  width: 100%;
   float: left;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .wrap_inner {
   float: left;
@@ -27,10 +41,15 @@ header {
   width: 100%;
   text-align: center;
 }
+middle {
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+}
 .poster {
   float: left;
   width: 100%;
-  background: #ddd;
 }
 .poster_img img {
   max-width: 100%;
@@ -47,8 +66,35 @@ h2 {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  font-family: 'Alata', sans-serif;
+}
+h1 {
+    font-family: 'Alata', sans-serif;
 }
 
+.poster_download, .team_download {
+  width: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.poster_download a, .team_download a {
+  display: inline-block;
+  background: #37474f;
+  padding: 0 10%;
+  line-height: 70px;
+  text-decoration: cadetblue;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Fredoka One', cursive;
+}
+body {
+  background: #cfd8dc;
+}
 .team_wrap {
   float: left;
   width: 100%;
@@ -56,8 +102,8 @@ h2 {
   flex-wrap: wrap;
 }
 .team_container {
-  width: 47%;
-  margin-right: 3%;
+  width: 49%;
+  margin-right: 2%;
   margin-bottom: 50px;
 }
 .team_cont, .team_img {
@@ -74,9 +120,119 @@ img {
   box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
   border-radius: 5px;
 }
+.team_container:nth-child(2n) {
+	margin-right: 0;
+}
+header {
+  float: left;
+  background: black;
+  color: white;
+  margin-bottom: 40px;
+  text-align: left;
+  text-indent: 20px;
+}
+header h1 {
+  font-size: 50px;
+  text-shadow: 0px 2px 2px rgba(255,255,255,0.5);
+}
+.poster_img img {
+  border-radius: 0;
+}
+.poster {
+	border-bottom: 4px dashed;
+	padding-bottom: 50px;
+}
+.hpx-head {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+span {
+  background: black;
+  color: white;
+  padding: 0 30px;
+  line-height: 40px;
+  display: inline-block;
+  float: left;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+h2 {
+  border-bottom: 5px solid black;
+  float: left;
+}
+.hpx-loader {
+	/*border: 10px solid #000;*/
+	border-radius: 50%;
+	border-top: 10px solid #000;
+	width: 70px;
+	height: 70px;
+	-webkit-animation: hpe-spin 2s linear infinite;
+	animation: hpe-spin 700ms linear infinite;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+@-webkit-keyframes hpe-spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes hpe-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.main {
+	visibility: hidden;
+	opacity: 0;
+}
+.hpx-head {
+	position: fixed;
+	left: 52%;
+	top: 40%;
+	transform: translate(-52%,-40%);
+	font-family: 'Alata', sans-serif;
+	font-size: 40px;
+}
+a:before {
+  content:"";
+  width:15px;
+  height:100px;
+  background:#1E2E36;
+  position: absolute;
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+  left:0px;
+  top:-20px;
+  animation:_8UqQ8B 2s linear infinite;
+  opacity:0.5;
+}
+.poster_download a, .team_download a {
+    position: relative;
+    overflow:hidden;
+}
+@keyframes _8UqQ8B {
+ 0% {
+  opacity:0;
+  left:-10%;
+ }
+ 50% {
+  opacity:0.45;
+  left:45%;
+ }
+ to {
+  opacity:0;
+  left:100%;
+ }
+}
         </style>
     </head>
     <body>
+        <div class="hpx-head">MPL 2020</div>
+        <div class="hpx-loader"></div>
         <div class="main">
             <div class="wrap">
                 <div class="wrap_inner">
@@ -93,7 +249,7 @@ img {
                             </div>
                         </div>
                         <div class="teams">
-                            <h2>TEAMS</h2>
+                            <h2><span>TEAMS</span></h2>
                             <div class="team_wrap">
                             <div class="team_container">
                                 <div class="team_cont">
