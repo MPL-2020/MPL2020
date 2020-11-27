@@ -221,7 +221,7 @@ a::before {
 .hpx-loader {
 	/* border: 10px solid #000; */
 	border-radius: 50%;
-	border-top: 10px solid #000;
+	border-top: 10px solid #f9af34;
 	width: 25vw;
 	height: 25vw;
 	-webkit-animation: hpe-spin 2s linear infinite;
@@ -304,10 +304,57 @@ footer {
 .d_img img {
   max-width: 60%;
 }
+.team_container:nth-child(1) .team_download a {
+  background: #d38103 !important;
+  color: white !important;
+}
+.team_container:nth-child(2) .team_download a {
+  background: #47a46d !important;
+  color: white !important;
+}
+.team_container:nth-child(3) .team_download a {
+  background: #f40508 !important;
+  color: white !important;
+}
+.team_container:nth-child(4) .team_download a {
+  background: #0185d8 !important;
+  color: white !important;
+}
+.team_container:nth-child(5) .team_download a {
+  background: #fecf07 !important;
+  color: #025aa1 !important;
+}
+.team_container:nth-child(6) .team_download a {
+  background: #fa5100 !important;
+  color: white !important;
+}
+.team_container:nth-child(1) .team_download.schedulex a {
+	background: #01233f !important;
+	color: white !important;
+}
+.teams.scheduley {
+  background: #feb72b;
+}
+.teams.scheduley .team_container  {
+  border-width: 0 !important;
+}
+.hpx-head img {
+  box-shadow: none !important;
+  max-width: 80%;
+}
+.hpx-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20%;
+}
+.teams.scheduley {
+	display: none;
+}
         </style>
     </head>
     <body>
-        <div class="hpx-head">MPL 2020</div>
+        <div class="hpx-head"><img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/docs/loader.png"></div>
         <div class="hpx-loader"></div>
         <div class="main">
             <div class="wrap">
@@ -389,7 +436,7 @@ footer {
                             </div>
                         </div>
                         </div>
-                        <div class="teams">
+                        <div class="teams scheduley">
                           <h2><span>SCHEDULE</span></h2>
                           <div class="team_wrap">
                           <div class="team_container">
@@ -398,21 +445,23 @@ footer {
                                       <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Schedule.jpg">
                                   </div>
                               </div>
-                              <div class="team_download">
+                              <div class="team_download schedulex">
                                   <a href="https://raw.githubusercontent.com/MPL-Valsad/2020/main/Schedule.jpg" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>Download</a>
                               </div>
                           </div>
                     </middle>
-                    <footer>
-                      <div class="design">
-                        <div class="d_img">
-                          <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/docs/a-logo-design-png-5.png">
-                        </div>
-                        <div class="d_line">Designed by ADNAN</div>
-                      </div>
-                    </footer>
+                    
                 </div>
             </div>
+            
         </div>
+        <footer>
+          <div class="design">
+            <div class="d_img">
+              <img src="https://raw.githubusercontent.com/MPL-Valsad/2020/main/docs/a-logo-design-png-5.png">
+            </div>
+            <div class="d_line">Designed by ADNAN</div>
+          </div>
+        </footer>
     </body>
 </html>
